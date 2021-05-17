@@ -1,5 +1,4 @@
 import "./App.css";
-import Map from "./components/Map";
 import { WrappedMap } from "./components/Map";
 function App() {
   return (
