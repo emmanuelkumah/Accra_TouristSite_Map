@@ -12,14 +12,8 @@ import uuid from "react-uuid";
 function Map() {
   //store selected site data
   const [selectedTourSite, setSelectedTourSite] = useState(null);
-  console.log("the selected site is", selectedTourSite);
   return (
-    <GoogleMap
-      defaultZoom={10}
-      defaultCenter={{ lat: 5.55, lng: -0.02 }}
-
-      //   defaultCenter={{ lat: -30.000233, lng: 136.209152 }}
-    >
+    <GoogleMap defaultZoom={10} defaultCenter={{ lat: 5.55, lng: -0.02 }}>
       {tours.map((site) => {
         return (
           <Marker
@@ -38,7 +32,12 @@ function Map() {
           }}
           onCloseClick={() => setSelectedTourSite(null)}
         >
-          <div>Selected tour site</div>
+          <div>
+            <h2>{selectedTourSite.name}</h2>
+            <p>{selectedTourSite.desc}</p>
+            <img src={selectedTourSite.img} alt="tours-site" />
+            <button>Read Review</button>
+          </div>
         </InfoWindow>
       ) : null}
     </GoogleMap>

@@ -3,3 +3,44 @@
   margin: 0;
   padding: 0;
 }
+header {
+  background: #f5f5f5;
+}
+header > h2 {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+header > p {
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.gm-style .gm-style-iw {
+  background-color: #f5f5f5 !important;
+  /* top: 10px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 500px !important;
+  padding-top: 10px;
+  display: block !important; */
+}
+/* style the image */
+.gm-style img {
+  max-width: 100%;
+}
+/*style the p tag*/
+.gm-style .gm-style-iw #google-popup p {
+  padding: 10px;
+}
+/*style the arrow*/
+.gm-style div div div div div div div div {
+  background-color: #3c61ad !important;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  color: #fff;
+  font-size: 16px;
+}

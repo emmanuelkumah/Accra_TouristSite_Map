@@ -4,7 +4,11 @@ function App() {
   return (
     <>
       <header>
-        <h2>Find all the recreational parks here</h2>
+        <h2>WhereNext?</h2>
+        <p>
+          Locate and explore interesting tourist sites in the city of Accra,
+          Ghana's Capital
+        </p>
       </header>
       <main style={{ width: "100vw", height: "100vh" }}>
         <WrappedMap
