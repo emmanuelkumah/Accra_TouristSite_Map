@@ -10,7 +10,7 @@ function App() {
           Ghana's Capital
         </p>
       </header>
-      <main style={{ width: "100vw", height: "100vh" }}>
+      <main style={{ width: "100vw", height: "90vh" }}>
         <WrappedMap
           googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
           loadingElement={<div style={{ height: `100%` }} />}

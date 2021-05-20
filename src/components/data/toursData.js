@@ -41,4 +41,11 @@ export const tours = [
     cordinates: [5.5415, -0.1762],
     img: "/images/castle.png",
   },
+  {
+    name: "Accra Zoo",
+    desc:
+      "Accra Zoo is under the Wildlife Division of the Forestry Commission, where living wild animals are kept for conservation/breeding, education, research and exhibition",
+    cordinates: [5.634546, -0.171911],
+    img: "/images/zoo.JPG",
+  },
 ];

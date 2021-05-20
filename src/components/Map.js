@@ -8,12 +8,17 @@ import {
 } from "react-google-maps";
 import { tours } from "./data/toursData";
 import uuid from "react-uuid";
+import MapStyles from "./MapStyles";
 
 function Map() {
   //store selected site data
   const [selectedTourSite, setSelectedTourSite] = useState(null);
   return (
-    <GoogleMap defaultZoom={10} defaultCenter={{ lat: 5.55, lng: -0.02 }}>
+    <GoogleMap
+      defaultZoom={10}
+      defaultCenter={{ lat: 5.55, lng: -0.02 }}
+      defaultOptions={{ styles: MapStyles }}
+    >
       {tours.map((site) => {
         return (
           <Marker
@@ -35,8 +40,15 @@ function Map() {
           <div>
             <h2>{selectedTourSite.name}</h2>
             <p>{selectedTourSite.desc}</p>
+            <button>
+              <a
+                href="https://www.tripadvisor.com/Attractions-g293797-Activities-Accra_Greater_Accra.html"
+                target="_blank"
+              >
+                Read Review
+              </a>
+            </button>
             <img src={selectedTourSite.img} alt="tours-site" />
-            <button>Read Review</button>
           </div>
         </InfoWindow>
       ) : null}
